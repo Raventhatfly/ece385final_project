@@ -1,0 +1,37 @@
+22:06:59 **** Incremental Build of configuration Debug for project mb_final ****
+make all 
+'Building file: ../src/software/map.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/map.o" -ID:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/software/map.d" -MT"src/software/map.o" -o "src/software/map.o" "../src/software/map.c"
+In file included from ../src/software/map.c:2:
+../src/software/plants.h:22: warning: "SUN_FLOWER" redefined
+   22 | #define SUN_FLOWER 50
+      | 
+../src/software/plants.h:21: note: this is the location of the previous definition
+   21 | #define SUN_FLOWER 2
+      | 
+'Finished building: ../src/software/map.c'
+' '
+'Building file: ../src/software/zombie.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/zombie.o" -ID:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/software/zombie.d" -MT"src/software/zombie.o" -o "src/software/zombie.o" "../src/software/zombie.c"
+../src/software/zombie.c: In function 'generate_zombie':
+../src/software/zombie.c:482:23: warning: implicit declaration of function 'random_row' [-Wimplicit-function-declaration]
+  482 |         uint8_t row = random_row();
+      |                       ^~~~~~~~~~
+'Finished building: ../src/software/zombie.c'
+' '
+'Building target: mb_final.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_final.elf"  ./src/software/lw_usb/HID.o ./src/software/lw_usb/MAX3421E.o ./src/software/lw_usb/transfer.o  ./src/software/game_timer.o ./src/software/hdmi_controller.o ./src/software/lw_usb_main.o ./src/software/map.o ./src/software/plants.o ./src/software/rand.o ./src/software/zombie.o  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_final.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_final.elf  |tee "mb_final.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30592	   6484	  10268	  47344	   b8f0	mb_final.elf
+'Finished building: mb_final.elf.size'
+' '
+
+22:07:00 Build Finished (took 801ms)
+
