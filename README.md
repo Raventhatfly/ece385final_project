@@ -1,4 +1,4 @@
-### ECE385 Spring 2024 Fianl Project at UIUC
+### ECE385 Spring 2024 Final Project at UIUC
 
 Authors: Feiyang Wu, Yihan Huang of Department of Electronic and Computer Engineering and ZJU-UIUC institute
 
