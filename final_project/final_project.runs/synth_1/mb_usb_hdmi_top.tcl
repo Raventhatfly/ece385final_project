@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -93,6 +94,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
+  D:/ZJUI/ECE385/labs/final/final_project/final_project.srcs/sources_1/imports/temp_src/audio.sv
   D:/ZJUI/ECE385/labs/final/final_project/final_project.srcs/sources_1/imports/temp_src/hex_driver.sv
   D:/ZJUI/ECE385/labs/final/final_project/final_project.srcs/sources_1/imports/temp_src/mb_hdmi_top.sv
 }
@@ -138,12 +140,12 @@ set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/fi
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3_board.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3.xdc]
-set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_axi_timer_1_0/mb_lab7_axi_timer_1_0.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_axi_timer_1_0/mb_lab7_axi_timer_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/mb_lab7_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_microblaze_0_0/data/mb_bootloop_le.elf]
 

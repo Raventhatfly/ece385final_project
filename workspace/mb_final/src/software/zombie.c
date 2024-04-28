@@ -1,10 +1,10 @@
 #include "zombie.h"
 #include "stdint.h"
+#include "map.h"
 
 #define ROWS 480
 #define COLUMNS 640
-//uint8_t zombie_img[3955];
-//
+extern slot_t lawn_map[32];
 
 uint8_t zombie_img[3955] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x09, 0x99,
 					   0x99, 0x99, 0x99, 0x99, 0x99, 0x90, 0x00, 0x99, 0x00,
@@ -484,19 +484,41 @@ void generate_zombie(void){
 		if(zombie_map[row][i].is_present == 0){
 			zombie_map[row][i].is_present = 1;
 			zombie_cnt++;
-			zombie_map[row][i].zombie_inst.pos_x = 600; //TODO: to be changed
-			zombie_map[row][i].zombie_inst.pos_y = (row * 90) + 155;
+			zombie_map[row][i].zombie_inst.pos_x = 580; //TODO: to be changed
+			zombie_map[row][i].zombie_inst.pos_y = (row * SLOT_HEIGHT) + 155;
+			zombie_map[row][i].zombie_inst.hp = ZOMBIE_HP;
+			break;
 		}
 	}
 }
 
 void update_zombie_map(BRAM_t* hdmi_ctrl){
+	uint8_t grid_col;
+	int rect_val;
+	// Initialize that no slot is under attack
+	for(uint8_t i=0; i< 32; i++){
+		lawn_map[i].under_attack = 0;
+	}
+
 	for(uint8_t i=0;i<4;i++){
 		for(uint8_t j=0;j<3;j++){
 			if(zombie_map[i][j].is_present == 1){
 				zombie_t zombie_inst = zombie_map[i][j].zombie_inst;
 				clear_zombie(&zombie_inst,hdmi_ctrl);
-				zombie_inst.pos_x -= ZOMBIE_X_STEP;
+
+				// Calculate rectified position
+				rect_val = zombie_inst.pos_x; //25
+
+				// Calculate the gird column number
+				grid_col = rect_val / SLOT_WIDTH;
+				if (grid_col > 7) grid_col = 7;
+				if(lawn_map[i*8+grid_col].plant_type == 0){
+					zombie_inst.pos_x -= ZOMBIE_X_STEP;
+				}else{
+					// This slot is under attack
+					lawn_map[i*8+grid_col].under_attack = 1;
+				}
+
 				zombie_map[i][j].zombie_inst = zombie_inst;
 				draw_zombie(&zombie_inst,hdmi_ctrl);
 			}
@@ -534,5 +556,15 @@ void update_zombie_pos(void){
 			}
 		}
 	}
+}
+
+// return 1 if there is zombie on the row; esle return 0
+uint8_t check_zombie(uint8_t row){
+	for(uint8_t j=0;j<3;j++){
+		if(zombie_map[row][j].is_present == 1){
+			return 1;
+		}
+	}
+	return 0;
 }
 

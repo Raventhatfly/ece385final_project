@@ -66,10 +66,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_lab7_axi
 # IP: bd/mb_lab7/ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_lab7_axi_gpio_0_3 || ORIG_REF_NAME==mb_lab7_axi_gpio_0_3} -quiet] -quiet
 
-# IP: bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_lab7_hdmi_controller_0_2 || ORIG_REF_NAME==mb_lab7_hdmi_controller_0_2} -quiet] -quiet
-
 # IP: bd/mb_lab7/ip/mb_lab7_axi_timer_1_0/mb_lab7_axi_timer_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_lab7_axi_timer_1_0 || ORIG_REF_NAME==mb_lab7_axi_timer_1_0} -quiet] -quiet
+
+# IP: bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_lab7_hdmi_controller_0_2 || ORIG_REF_NAME==mb_lab7_hdmi_controller_0_2} -quiet] -quiet
 
 # XDC: d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/mb_lab7_ooc.xdc

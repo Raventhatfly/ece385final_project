@@ -72,3 +72,26 @@ platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_t
 platform generate -domains 
 platform clean
 platform generate
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform generate
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform clean
+platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
+platform generate
+platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate

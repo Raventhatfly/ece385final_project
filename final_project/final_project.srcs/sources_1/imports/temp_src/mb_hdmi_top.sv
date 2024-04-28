@@ -37,7 +37,10 @@ module mb_usb_hdmi_top(
     output logic [7:0] hex_segA,
     output logic [3:0] hex_gridA,
     output logic [7:0] hex_segB,
-    output logic [3:0] hex_gridB
+    output logic [3:0] hex_gridB,
+    
+    // Audio output
+    output logic audio_out
 );
 
     
@@ -92,76 +95,10 @@ module mb_usb_hdmi_top(
         .usb_spi_ss(usb_spi_ss)
     );
 
-    //clock wizard configured with a 1x and 5x clock for HDMI
-//    clk_wiz_0 clk_wiz (
-//        .clk_out1(clk_25MHz),
-//        .clk_out2(clk_125MHz),
-//        .reset(reset_ah),
-//        .locked(locked),
-//        .clk_in1(Clk)
-//    );
-    
-    // VGA Sync signal generator
-//    vga_controller vga (
-//        .pixel_clk(clk_25MHz),
-//        .reset(reset_ah),
-//        .hs(hsync),
-//        .vs(vsync),
-//        .active_nblank(vde),
-//        .drawX(drawX),
-//        .drawY(drawY)
-//    );    
-
-    //Real Digital VGA to HDMI converter
-    // hdmi_tx_0 vga_to_hdmi (
-    //     //Clocking and Reset
-    //     .pix_clk(clk_25MHz),
-    //     .pix_clkx5(clk_125MHz),
-    //     .pix_clk_locked(locked),
-    //     //Reset is active LOW
-    //     .rst(reset_ah),
-    //     //Color and Sync Signals
-    //     .red(red),
-    //     .green(green),
-    //     .blue(blue),
-    //     .hsync(hsync),
-    //     .vsync(vsync),
-    //     .vde(vde),
-        
-    //     //aux Data (unused)
-    //     .aux0_din(4'b0),
-    //     .aux1_din(4'b0),
-    //     .aux2_din(4'b0),
-    //     .ade(1'b0),
-        
-    //     //Differential outputs
-    //     .TMDS_CLK_P(hdmi_tmds_clk_p),          
-    //     .TMDS_CLK_N(hdmi_tmds_clk_n),          
-    //     .TMDS_DATA_P(hdmi_tmds_data_p),         
-    //     .TMDS_DATA_N(hdmi_tmds_data_n)          
-    // );
-
-    
-    //Ball Module
-    // ball ball_instance(
-    //     .Reset(reset_ah),
-    //     .frame_clk(),                    //Figure out what this should be so that the ball will move
-    //     .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
-    //     .BallX(ballxsig),
-    //     .BallY(ballysig),
-    //     .BallS(ballsizesig)
-    // );
-    
-    //Color Mapper Module   
-    // color_mapper color_instance(
-    //     .BallX(ballxsig),
-    //     .BallY(ballysig),
-    //     .DrawX(drawX),
-    //     .DrawY(drawY),
-    //     .Ball_size(ballsizesig),
-    //     .Red(red),
-    //     .Green(green),
-    //     .Blue(blue)
-    // );
+    beep_ctrl (
+        .clk(Clk),     
+        .rst_n(~reset_rtl_0),
+        .beep1(audio_out)   
+   );
     
 endmodule

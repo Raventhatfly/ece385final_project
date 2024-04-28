@@ -13,7 +13,7 @@ void game_timer_handler(void *CallbackRef, u8 CmrctrNumber){
 }
 
 void game_timer_init(void){
-	 timer_cnt = 0;
+	timer_cnt = 0;
 	XTmrCtr_Initialize(&game_timer, XPAR_AXI_TIMER_1_DEVICE_ID);
 	XTmrCtr_SetOptions(&game_timer, 0, XTC_AUTO_RELOAD_OPTION | XTC_INT_MODE_OPTION );
 
@@ -28,6 +28,6 @@ void game_timer_init(void){
 uint32_t game_get_time_ms(){
 	uint32_t tick = XTmrCtr_GetValue(&game_timer, 0);
 	uint32_t time_ms = tick / (XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ/1000);
-	time_ms = timer_cnt * (42949 / (XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ/1000)) + time_ms;
+	time_ms = timer_cnt * 42949 + time_ms;
 	return time_ms;
 }

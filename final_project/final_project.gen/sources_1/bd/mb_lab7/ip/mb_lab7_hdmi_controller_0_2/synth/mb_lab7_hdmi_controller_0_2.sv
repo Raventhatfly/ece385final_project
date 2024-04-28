@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:hdmi_controller:1.0
-// IP Revision: 27
+// IP Revision: 31
 
 (* X_CORE_INFO = "hdmi_controller_v1_0,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "mb_lab7_hdmi_controller_0_2,hdmi_controller_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "mb_lab7_hdmi_controller_0_2,hdmi_controller_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=hdmi_controller,x_ipVersion=1.0,x_ipCoreRevision=27,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_DATA_WIDTH=32,C_AXI_ADDR_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "mb_lab7_hdmi_controller_0_2,hdmi_controller_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=hdmi_controller,x_ipVersion=1.0,x_ipCoreRevision=31,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_AXI_DATA_WIDTH=32,C_AXI_ADDR_WIDTH=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module mb_lab7_hdmi_controller_0_2 (
   cursor_x,

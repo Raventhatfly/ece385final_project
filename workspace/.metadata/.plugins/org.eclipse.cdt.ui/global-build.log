@@ -1,36 +1,157 @@
 Nothing to build in platform 'mb_usb_hdmi_top'
 
-22:06:59 **** Incremental Build of configuration Debug for project mb_final ****
+22:41:18 **** Incremental Build of configuration Debug for project mb_final ****
 make all 
-'Building file: ../src/software/map.c'
+'Building file: ../src/software/lw_usb_main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/map.o" -ID:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/software/map.d" -MT"src/software/map.o" -o "src/software/map.o" "../src/software/map.c"
-In file included from ../src/software/map.c:2:
-../src/software/plants.h:22: warning: "SUN_FLOWER" redefined
-   22 | #define SUN_FLOWER 50
-      | 
-../src/software/plants.h:21: note: this is the location of the previous definition
-   21 | #define SUN_FLOWER 2
-      | 
-'Finished building: ../src/software/map.c'
-' '
-'Building file: ../src/software/zombie.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/zombie.o" -ID:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/software/zombie.d" -MT"src/software/zombie.o" -o "src/software/zombie.o" "../src/software/zombie.c"
-../src/software/zombie.c: In function 'generate_zombie':
-../src/software/zombie.c:482:23: warning: implicit declaration of function 'random_row' [-Wimplicit-function-declaration]
-  482 |         uint8_t row = random_row();
-      |                       ^~~~~~~~~~
-'Finished building: ../src/software/zombie.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/software/lw_usb_main.o" -ID:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/software/lw_usb_main.d" -MT"src/software/lw_usb_main.o" -o "src/software/lw_usb_main.o" "../src/software/lw_usb_main.c"
+In file included from D:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xintc.h:219,
+                 from ../src/software/lw_usb_main.c:10:
+D:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:642:45: warning: initialization of 'volatile struct BRAM_t *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  642 | #define XPAR_HDMI_CONTROLLER_0_AXI_BASEADDR 0x41000000
+      |                                             ^~~~~~~~~~
+../src/software/lw_usb_main.c:33:44: note: in expansion of macro 'XPAR_HDMI_CONTROLLER_0_AXI_BASEADDR'
+   33 | static volatile struct BRAM_t* hdmi_ctrl = XPAR_HDMI_CONTROLLER_0_AXI_BASEADDR;
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/software/lw_usb_main.c:79:8: warning: type defaults to 'int' in declaration of 'x' [-Wimplicit-int]
+   79 | static x = 0;
+      |        ^
+../src/software/lw_usb_main.c: In function 'main':
+../src/software/lw_usb_main.c:117:27: warning: passing argument 2 of 'draw_sun_digit' from incompatible pointer type [-Wincompatible-pointer-types]
+  117 |         draw_sun_digit(11,hdmi_ctrl);
+      |                           ^~~~~~~~~
+      |                           |
+      |                           volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:41:51: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   41 | uint8_t draw_sun_digit(uint8_t sun_value, BRAM_t* hdmi_ctrl);
+      |                                           ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:118:21: warning: passing argument 1 of 'clear_digit' from incompatible pointer type [-Wincompatible-pointer-types]
+  118 |         clear_digit(hdmi_ctrl);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:42:26: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   42 | void clear_digit(BRAM_t* hdmi_ctrl);
+      |                  ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:161:9: warning: implicit declaration of function 'game_timer_init' [-Wimplicit-function-declaration]
+  161 |         game_timer_init();
+      |         ^~~~~~~~~~~~~~~
+../src/software/lw_usb_main.c:175:26: warning: passing argument 1 of 'draw_map' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |                 draw_map(hdmi_ctrl);
+      |                          ^~~~~~~~~
+      |                          |
+      |                          volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:32:23: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   32 | void draw_map(BRAM_t* hdmi_ctrl);
+      |               ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:179:38: warning: passing argument 1 of 'update_digit' from incompatible pointer type [-Wincompatible-pointer-types]
+  179 |                         update_digit(hdmi_ctrl);
+      |                                      ^~~~~~~~~
+      |                                      |
+      |                                      volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:43:27: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   43 | void update_digit(BRAM_t* hdmi_ctrl);
+      |                   ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:181:25: warning: implicit declaration of function 'pepper_burn' [-Wimplicit-function-declaration]
+  181 |                         pepper_burn(hdmi_ctrl);
+      |                         ^~~~~~~~~~~
+../src/software/lw_usb_main.c:182:25: warning: implicit declaration of function 'update_rand_sun' [-Wimplicit-function-declaration]
+  182 |                         update_rand_sun(hdmi_ctrl);
+      |                         ^~~~~~~~~~~~~~~
+../src/software/lw_usb_main.c:183:43: warning: passing argument 1 of 'draw_all_grid_sun' from incompatible pointer type [-Wincompatible-pointer-types]
+  183 |                         draw_all_grid_sun(hdmi_ctrl);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:21:
+../src/software/sun.h:19:32: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   19 | void draw_all_grid_sun(BRAM_t* hdmi_ctrl);
+      |                        ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:184:43: warning: passing argument 1 of 'update_zombie_map' from incompatible pointer type [-Wincompatible-pointer-types]
+  184 |                         update_zombie_map(hdmi_ctrl);
+      |                                           ^~~~~~~~~
+      |                                           |
+      |                                           volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:16:
+../src/software/zombie.h:36:32: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   36 | void update_zombie_map(BRAM_t* hdmi_ctrl);
+      |                        ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:185:40: warning: passing argument 1 of 'update_pea_map' from incompatible pointer type [-Wincompatible-pointer-types]
+  185 |                         update_pea_map(hdmi_ctrl);
+      |                                        ^~~~~~~~~
+      |                                        |
+      |                                        volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:17:
+../src/software/plants.h:58:29: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   58 | void update_pea_map(BRAM_t* hdmi_ctrl);
+      |                     ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:186:37: warning: passing argument 1 of 'check_clear' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |                         check_clear(hdmi_ctrl);
+      |                                     ^~~~~~~~~
+      |                                     |
+      |                                     volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:34:26: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   34 | void check_clear(BRAM_t* hdmi_ctrl);
+      |                  ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:190:33: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+  190 |                                 return;
+      |                                 ^~~~~~
+../src/software/lw_usb_main.c:88:5: note: declared here
+   88 | int main() {
+      |     ^~~~
+In file included from ../src/software/lw_usb_main.c:17:
+../src/software/plants.h:27:18: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '500' to '244' [-Woverflow]
+   27 | #define NUT_HP   500
+      |                  ^~~
+../src/software/lw_usb_main.c:261:141: note: in expansion of macro 'NUT_HP'
+  261 |                                                 set_slot( (cursor_y - PLANT_OFFSET_Y)/SLOT_HEIGHT, (cursor_x - PLANT_OFFSET_X)/SLOT_WIDTH,3,NUT_HP);
+      |                                                                                                                                             ^~~~~~
+../src/software/plants.h:31:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '1000' to '232' [-Woverflow]
+   31 | #define PEPPER_HP   1000
+      |                     ^~~~
+../src/software/lw_usb_main.c:265:141: note: in expansion of macro 'PEPPER_HP'
+  265 |                                                 set_slot( (cursor_y - PLANT_OFFSET_Y)/SLOT_HEIGHT, (cursor_x - PLANT_OFFSET_X)/SLOT_WIDTH,4,PEPPER_HP);
+      |                                                                                                                                             ^~~~~~~~~
+../src/software/lw_usb_main.c:270:70: warning: passing argument 3 of 'pick_sun' from incompatible pointer type [-Wincompatible-pointer-types]
+  270 |                                         pick_sun(cursor_x, cursor_y, hdmi_ctrl);
+      |                                                                      ^~~~~~~~~
+      |                                                                      |
+      |                                                                      volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:21:
+../src/software/sun.h:20:46: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   20 | void pick_sun(uint16_t x, uint16_t y,BRAM_t* hdmi_ctrl);
+      |                                      ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:272:133: warning: passing argument 3 of 'delete_slot' from incompatible pointer type [-Wincompatible-pointer-types]
+  272 |                                         delete_slot((cursor_y - PLANT_OFFSET_Y)/SLOT_HEIGHT, (cursor_x - PLANT_OFFSET_X)/SLOT_WIDTH,hdmi_ctrl);
+      |                                                                                                                                     ^~~~~~~~~
+      |                                                                                                                                     |
+      |                                                                                                                                     volatile struct BRAM_t *
+In file included from ../src/software/lw_usb_main.c:15:
+../src/software/map.h:31:52: note: expected 'BRAM_t *' {aka 'struct BRAM *'} but argument is of type 'volatile struct BRAM_t *'
+   31 | void delete_slot(uint8_t row, uint8_t col, BRAM_t* hdmi_ctrl);
+      |                                            ~~~~~~~~^~~~~~~~~
+../src/software/lw_usb_main.c:139:17: warning: unused variable 'j' [-Wunused-variable]
+  139 |         uint8_t j = 0;
+      |                 ^
+At top level:
+../src/software/lw_usb_main.c:79:8: warning: 'x' defined but not used [-Wunused-variable]
+   79 | static x = 0;
+      |        ^
+'Finished building: ../src/software/lw_usb_main.c'
 ' '
 'Building target: mb_final.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_final.elf"  ./src/software/lw_usb/HID.o ./src/software/lw_usb/MAX3421E.o ./src/software/lw_usb/transfer.o  ./src/software/game_timer.o ./src/software/hdmi_controller.o ./src/software/lw_usb_main.o ./src/software/map.o ./src/software/plants.o ./src/software/rand.o ./src/software/zombie.o  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ZJUI/ECE385/labs/final/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_final.elf"  ./src/software/lw_usb/HID.o ./src/software/lw_usb/MAX3421E.o ./src/software/lw_usb/transfer.o  ./src/software/game_timer.o ./src/software/hdmi_controller.o ./src/software/lw_usb_main.o ./src/software/map.o ./src/software/plants.o ./src/software/rand.o ./src/software/sun.o ./src/software/zombie.o  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: mb_final.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size mb_final.elf  |tee "mb_final.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30592	   6484	  10268	  47344	   b8f0	mb_final.elf
+  41624	  18892	   4700	  65216	   fec0	mb_final.elf
 'Finished building: mb_final.elf.size'
 ' '

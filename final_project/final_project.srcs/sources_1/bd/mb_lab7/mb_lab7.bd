@@ -45,8 +45,8 @@
       "gpio_usb_int": "",
       "gpio_usb_rst": "",
       "gpio_usb_keycode": "",
-      "hdmi_controller_0": "",
-      "axi_timer_1": ""
+      "axi_timer_1": "",
+      "hdmi_controller_0": ""
     },
     "interface_ports": {
       "hdmi": {
@@ -1706,17 +1706,17 @@
           }
         }
       },
-      "hdmi_controller_0": {
-        "vlnv": "xilinx.com:user:hdmi_controller:1.0",
-        "xci_name": "mb_lab7_hdmi_controller_0_2",
-        "xci_path": "ip\\mb_lab7_hdmi_controller_0_2\\mb_lab7_hdmi_controller_0_2.xci",
-        "inst_hier_path": "hdmi_controller_0"
-      },
       "axi_timer_1": {
         "vlnv": "xilinx.com:ip:axi_timer:2.0",
         "xci_name": "mb_lab7_axi_timer_1_0",
         "xci_path": "ip\\mb_lab7_axi_timer_1_0\\mb_lab7_axi_timer_1_0.xci",
         "inst_hier_path": "axi_timer_1"
+      },
+      "hdmi_controller_0": {
+        "vlnv": "xilinx.com:user:hdmi_controller:1.0",
+        "xci_name": "mb_lab7_hdmi_controller_0_2",
+        "xci_path": "ip\\mb_lab7_hdmi_controller_0_2\\mb_lab7_hdmi_controller_0_2.xci",
+        "inst_hier_path": "hdmi_controller_0"
       }
     },
     "interface_nets": {
@@ -1936,9 +1936,9 @@
           "microblaze_0_axi_periph/M07_ACLK",
           "gpio_usb_keycode/s_axi_aclk",
           "microblaze_0_axi_periph/M08_ACLK",
-          "hdmi_controller_0/axi_aclk",
           "axi_timer_1/s_axi_aclk",
-          "microblaze_0_axi_periph/M09_ACLK"
+          "microblaze_0_axi_periph/M09_ACLK",
+          "hdmi_controller_0/axi_aclk"
         ]
       },
       "reset_rtl_0_1": {
@@ -1982,9 +1982,9 @@
           "microblaze_0_axi_periph/M07_ARESETN",
           "gpio_usb_keycode/s_axi_aresetn",
           "microblaze_0_axi_periph/M08_ARESETN",
-          "hdmi_controller_0/axi_aresetn",
           "axi_timer_1/s_axi_aresetn",
-          "microblaze_0_axi_periph/M09_ARESETN"
+          "microblaze_0_axi_periph/M09_ARESETN",
+          "hdmi_controller_0/axi_aresetn"
         ]
       },
       "spi_usb_io0_o": {

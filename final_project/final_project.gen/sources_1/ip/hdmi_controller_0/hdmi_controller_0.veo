@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:hdmi_controller:1.0
-// IP Revision: 27
+// IP Revision: 31
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

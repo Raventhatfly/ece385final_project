@@ -1,23 +1,23 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.862866",
-   "Default View_TopLeft":"505,-1270",
+   "Default View_TopLeft":"783,-1269",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port hdmi -pg 1 -lvl 8 -x 2700 -y 390 -defaultsOSRD
-preplace port uart_rtl_0 -pg 1 -lvl 8 -x 2700 -y 70 -defaultsOSRD
-preplace port gpio_usb_int -pg 1 -lvl 8 -x 2700 -y -710 -defaultsOSRD
-preplace port gpio_usb_rst -pg 1 -lvl 8 -x 2700 -y -840 -defaultsOSRD
-preplace port gpio_usb_keycode0 -pg 1 -lvl 8 -x 2700 -y -990 -defaultsOSRD
-preplace port gpio_usb_keycode1 -pg 1 -lvl 8 -x 2700 -y -970 -defaultsOSRD
-preplace port gpio_rtl_1 -pg 1 -lvl 8 -x 2700 -y 140 -defaultsOSRD
+preplace port hdmi -pg 1 -lvl 8 -x 2710 -y 390 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 8 -x 2710 -y 70 -defaultsOSRD
+preplace port gpio_usb_int -pg 1 -lvl 8 -x 2710 -y -710 -defaultsOSRD
+preplace port gpio_usb_rst -pg 1 -lvl 8 -x 2710 -y -840 -defaultsOSRD
+preplace port gpio_usb_keycode0 -pg 1 -lvl 8 -x 2710 -y -990 -defaultsOSRD
+preplace port gpio_usb_keycode1 -pg 1 -lvl 8 -x 2710 -y -970 -defaultsOSRD
+preplace port gpio_rtl_1 -pg 1 -lvl 8 -x 2710 -y 140 -defaultsOSRD
 preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x -10 -y 550 -defaultsOSRD
 preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
-preplace port port-id_usb_spi_mosi -pg 1 -lvl 8 -x 2700 -y -530 -defaultsOSRD
-preplace port port-id_usb_spi_sclk -pg 1 -lvl 8 -x 2700 -y -410 -defaultsOSRD
+preplace port port-id_usb_spi_mosi -pg 1 -lvl 8 -x 2710 -y -530 -defaultsOSRD
+preplace port port-id_usb_spi_sclk -pg 1 -lvl 8 -x 2710 -y -410 -defaultsOSRD
 preplace port port-id_usb_spi_miso -pg 1 -lvl 0 -x -10 -y -250 -defaultsOSRD
-preplace portBus usb_spi_ss -pg 1 -lvl 8 -x 2700 -y -370 -defaultsOSRD
+preplace portBus usb_spi_ss -pg 1 -lvl 8 -x 2710 -y -370 -defaultsOSRD
 preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 2300 -y 340 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 110 -y 540 -defaultsOSRD
 preplace inst mdm_1 -pg 1 -lvl 3 -x 750 -y 510 -defaultsOSRD
@@ -33,8 +33,8 @@ preplace inst microblaze_0_axi_intc -pg 1 -lvl 4 -x 1190 -y 290 -defaultsOSRD
 preplace inst gpio_usb_int -pg 1 -lvl 6 -x 2300 -y -700 -defaultsOSRD
 preplace inst gpio_usb_rst -pg 1 -lvl 6 -x 2300 -y -840 -defaultsOSRD
 preplace inst gpio_usb_keycode -pg 1 -lvl 6 -x 2300 -y -980 -defaultsOSRD
-preplace inst hdmi_controller_0 -pg 1 -lvl 6 -x 2300 -y 690 -defaultsOSRD
 preplace inst axi_timer_1 -pg 1 -lvl 6 -x 2300 -y -1160 -defaultsOSRD
+preplace inst hdmi_controller_0 -pg 1 -lvl 6 -x 2300 -y 690 -defaultsOSRD
 preplace netloc axi_gpio_cursor_gpio2_io_o 1 5 2 2150 50 2460
 preplace netloc axi_gpio_cursor_gpio_io_o 1 5 2 2160 230 2440
 preplace netloc axi_timer_0_interrupt 1 6 1 2450 -240n
@@ -76,8 +76,8 @@ preplace netloc microblaze_0_dlmb_1 1 4 1 1450 490n
 preplace netloc microblaze_0_ilmb_1 1 4 1 1430 510n
 preplace netloc microblaze_0_intc_axi 1 3 3 890 180 1470 190 2030J
 preplace netloc microblaze_0_interrupt 1 3 2 890 410 1430J
-levelinfo -pg 1 -10 110 400 750 1190 1880 2300 2590 2700
-pagesize -pg 1 -db -bbox -sgen -150 -1320 2880 1170
+levelinfo -pg 1 -10 110 400 750 1190 1880 2300 2590 2710
+pagesize -pg 1 -db -bbox -sgen -150 -1320 2890 1170
 "
 }
 {

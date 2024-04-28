@@ -10,6 +10,8 @@
 
 #define ZOMBIE_WIDTH 70
 #define ZOMBIE_HEIGHT 113
+#define ZOMBIE_HP 29
+#define ZOMIE_ATK 1
 
 #define ZOMBIE_X_STEP 1
 
@@ -35,5 +37,6 @@ void update_zombie_map(BRAM_t* hdmi_ctrl);
 void draw_zombie_map(BRAM_t* hdmi_ctrl);
 void clear_zombie_map(BRAM_t* hdmi_ctrl);
 void update_zombie_pos(void);
+uint8_t check_zombie(uint8_t row);
 
 #endif

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 17 19:57:55 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Apr 27 20:16:25 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="mb_lab7" PACKAGE="csga324" SPEEDGRADE="-1"/>
 
@@ -2533,9 +2533,9 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M07_ACLK"/>
             <CONNECTION INSTANCE="gpio_usb_keycode" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M08_ACLK"/>
-            <CONNECTION INSTANCE="hdmi_controller_0" PORT="axi_aclk"/>
             <CONNECTION INSTANCE="axi_timer_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M09_ACLK"/>
+            <CONNECTION INSTANCE="hdmi_controller_0" PORT="axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_1_locked">
@@ -3629,7 +3629,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="27" FULLNAME="/hdmi_controller_0" HWVERSION="1.0" INSTANCE="hdmi_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_controller" VLNV="xilinx.com:user:hdmi_controller:1.0">
+    <MODULE COREREVISION="31" FULLNAME="/hdmi_controller_0" HWVERSION="1.0" INSTANCE="hdmi_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_controller" VLNV="xilinx.com:user:hdmi_controller:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI" NAME="AXI_reg" RANGE="4096" USAGE="register"/>
@@ -9047,9 +9047,9 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M07_ARESETN"/>
             <CONNECTION INSTANCE="gpio_usb_keycode" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M08_ARESETN"/>
-            <CONNECTION INSTANCE="hdmi_controller_0" PORT="axi_aresetn"/>
             <CONNECTION INSTANCE="axi_timer_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M09_ARESETN"/>
+            <CONNECTION INSTANCE="hdmi_controller_0" PORT="axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

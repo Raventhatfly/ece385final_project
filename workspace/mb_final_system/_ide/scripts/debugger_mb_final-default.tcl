@@ -20,5 +20,4 @@ rst -system
 after 3000
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 dow D:/ZJUI/ECE385/labs/final/workspace/mb_final/Debug/mb_final.elf
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
+bpadd -addr &main

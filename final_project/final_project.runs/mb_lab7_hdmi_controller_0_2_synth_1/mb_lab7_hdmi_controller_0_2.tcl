@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "mb_lab7_hdmi_controller_0_2_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -95,7 +93,7 @@ set_property ip_output_repo d:/ZJUI/ECE385/labs/final/final_project/final_projec
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/ZJUI/ECE385/labs/final/final_project/final_project.srcs/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci
+read_ip -quiet D:/ZJUI/ECE385/labs/final/final_project/final_project.srcs/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all d:/ZJUI/ECE385/labs/final/final_project/final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2/src/clk_wiz_0/clk_wiz_0_ooc.xdc]

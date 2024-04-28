@@ -1,0 +1,23 @@
+#ifndef SUN_H
+#define SUN_H
+#include "map.h"
+#include <stdint.h>
+
+#define SUN_WIDTH 60
+#define SUN_HEIGHT 60
+#define SUN_OFFSET_X 66
+#define SUN_OFFSET_Y 50
+#define RAND_SUN_STEP 2
+
+#define RAND_SUN_INTERVAL 25000
+
+
+void init_grid_sun(void);
+void draw_sun(uint16_t x, uint16_t y, BRAM_t* hdmi_ctrl);
+void clear_sun(uint16_t x, uint16_t y, BRAM_t* hdmi_ctrl);
+void generate_grid_sun(void);
+void draw_all_grid_sun(BRAM_t* hdmi_ctrl);
+void pick_sun(uint16_t x, uint16_t y,BRAM_t* hdmi_ctrl);
+
+#endif
+

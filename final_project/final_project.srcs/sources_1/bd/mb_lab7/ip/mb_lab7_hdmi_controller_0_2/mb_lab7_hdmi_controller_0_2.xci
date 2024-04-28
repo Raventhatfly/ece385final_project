@@ -4,7 +4,7 @@
     "xci_name": "mb_lab7_hdmi_controller_0_2",
     "cell_name": "hdmi_controller_0",
     "component_reference": "xilinx.com:user:hdmi_controller:1.0",
-    "ip_revision": "27",
+    "ip_revision": "31",
     "gen_directory": "../../../../../../final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2",
     "parameters": {
       "component_parameters": {
@@ -35,7 +35,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "27" } ],
+        "IPREVISION": [ { "value": "31" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../final_project.gen/sources_1/bd/mb_lab7/ip/mb_lab7_hdmi_controller_0_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
