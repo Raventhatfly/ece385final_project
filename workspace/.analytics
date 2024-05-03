@@ -824,3 +824,70 @@ timestamp=[2024-04-27 22:29:20], mode=BUILD, duration=0:00:01.427, duration_ms=1
 timestamp=[2024-04-27 22:33:27], mode=BUILD, duration=0:00:01.373, duration_ms=1373, data={name=mb_final, configuration=Debug, clean_build=false}
 timestamp=[2024-04-27 22:40:33], mode=BUILD, duration=0:00:00.814, duration_ms=814, data={name=mb_final, configuration=Debug, clean_build=false}
 timestamp=[2024-04-27 22:41:19], mode=BUILD, duration=0:00:00.629, duration_ms=629, data={name=mb_final, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 12:00:49], mode=WORKBENCH_START, duration=0:00:08.571, duration_ms=8571, data={}
+timestamp=[2024-04-29 12:00:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.965, duration_ms=965, data={editors_count=11, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 12:00:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.083, duration_ms=83, data={}
+timestamp=[2024-04-29 12:16:07], mode=BUILD, duration=0:00:01.085, duration_ms=1085, data={name=mb_final, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 12:16:22], mode=BUILD, duration=0:00:00.366, duration_ms=366, data={name=mb_final, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 12:16:37], mode=BUILD, duration=0:00:02.385, duration_ms=2385, data={name=mb_final, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 12:17:06], mode=BUILD, duration=0:00:00.795, duration_ms=795, data={name=mb_final, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 12:17:19], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=mb_final, configuration=Release, clean_build=true}
+timestamp=[2024-04-29 12:17:23], mode=BUILD, duration=0:00:03.951, duration_ms=3951, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:20:52], mode=BUILD, duration=0:00:00.980, duration_ms=980, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:23:20], mode=BUILD, duration=0:00:01.075, duration_ms=1075, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:25:35], mode=BUILD, duration=0:00:01.371, duration_ms=1371, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:27:15], mode=BUILD, duration=0:00:00.857, duration_ms=857, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:28:22], mode=BUILD, duration=0:00:01.043, duration_ms=1043, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:30:07], mode=BUILD, duration=0:00:00.979, duration_ms=979, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:31:35], mode=BUILD, duration=0:00:01.414, duration_ms=1414, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 12:32:16], mode=BUILD, duration=0:00:01.027, duration_ms=1027, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 15:40:00], mode=WORKBENCH_START, duration=0:00:07.089, duration_ms=7089, data={}
+timestamp=[2024-04-29 15:40:00], mode=WORKBENCH_UI_INIT, duration=0:00:00.729, duration_ms=729, data={editors_count=13, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 15:40:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.063, duration_ms=63, data={}
+timestamp=[2024-04-29 15:40:37], mode=BUILD, duration=0:00:00.479, duration_ms=479, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 15:40:40], mode=BUILD, duration=0:00:00.124, duration_ms=124, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 18:56:45], mode=WORKBENCH_START, duration=0:00:08.675, duration_ms=8675, data={}
+timestamp=[2024-04-29 18:56:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.904, duration_ms=904, data={editors_count=13, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 18:56:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.058, duration_ms=58, data={}
+timestamp=[2024-04-29 19:13:25], mode=WORKBENCH_START, duration=0:00:06.357, duration_ms=6357, data={}
+timestamp=[2024-04-29 19:13:26], mode=WORKBENCH_UI_INIT, duration=0:00:00.848, duration_ms=848, data={editors_count=13, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 19:13:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.031, duration_ms=31, data={}
+timestamp=[2024-04-29 20:26:07], mode=WORKBENCH_START, duration=0:00:09.804, duration_ms=9804, data={}
+timestamp=[2024-04-29 20:26:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.774, duration_ms=774, data={editors_count=13, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 20:26:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.053, duration_ms=53, data={}
+timestamp=[2024-04-29 20:41:34], mode=PLATFORM_GENERATION, duration=0:00:05.628, duration_ms=5628, data={name=mb_usb_hdmi_top}
+timestamp=[2024-04-29 20:41:37], mode=BUILD, duration=0:00:02.104, duration_ms=2104, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 20:42:11], mode=BUILD, duration=0:00:01.246, duration_ms=1246, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 20:51:49], mode=BUILD, duration=0:00:01.444, duration_ms=1444, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 20:55:11], mode=BUILD, duration=0:00:01.051, duration_ms=1051, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 20:56:16], mode=BUILD, duration=0:00:01.048, duration_ms=1048, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 20:57:10], mode=BUILD, duration=0:00:01.223, duration_ms=1223, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:00:54], mode=BUILD, duration=0:00:01.371, duration_ms=1371, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:02:11], mode=BUILD, duration=0:00:01.310, duration_ms=1310, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:03:00], mode=BUILD, duration=0:00:01.356, duration_ms=1356, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:04:10], mode=BUILD, duration=0:00:01.044, duration_ms=1044, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:07:09], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:07:51], mode=BUILD, duration=0:00:00.792, duration_ms=792, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:08:59], mode=BUILD, duration=0:00:00.968, duration_ms=968, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:09:13], mode=BUILD, duration=0:00:01.125, duration_ms=1125, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:09:28], mode=BUILD, duration=0:00:00.204, duration_ms=204, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:09:56], mode=WORKBENCH_START, duration=0:00:06.991, duration_ms=6991, data={}
+timestamp=[2024-04-29 21:09:57], mode=WORKBENCH_UI_INIT, duration=0:00:00.735, duration_ms=735, data={editors_count=14, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-04-29 21:09:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.027, duration_ms=27, data={}
+timestamp=[2024-04-29 21:10:10], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:11:45], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:16:32], mode=BUILD, duration=0:00:02.585, duration_ms=2585, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:22:41], mode=BUILD, duration=0:00:01.116, duration_ms=1116, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-04-29 21:28:41], mode=BUILD, duration=0:00:01.065, duration_ms=1065, data={name=mb_final, configuration=Release, clean_build=false}
+timestamp=[2024-05-01 22:47:44], mode=WORKBENCH_START, duration=0:00:08.532, duration_ms=8532, data={}
+timestamp=[2024-05-01 22:47:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.795, duration_ms=795, data={editors_count=14, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-05-01 22:47:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.074, duration_ms=74, data={}
+timestamp=[2024-05-02 22:06:32], mode=WORKBENCH_START, duration=0:00:11.072, duration_ms=11072, data={}
+timestamp=[2024-05-02 22:06:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.940, duration_ms=940, data={editors_count=14, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-05-02 22:06:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.079, duration_ms=79, data={}
+timestamp=[2024-05-02 22:38:21], mode=WORKBENCH_START, duration=0:00:07.873, duration_ms=7873, data={}
+timestamp=[2024-05-02 22:38:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.764, duration_ms=764, data={editors_count=14, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-05-02 22:38:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.021, duration_ms=21, data={}
+timestamp=[2024-05-03 10:37:40], mode=WORKBENCH_START, duration=0:00:08.790, duration_ms=8790, data={}
+timestamp=[2024-05-03 10:37:41], mode=WORKBENCH_UI_INIT, duration=0:00:00.946, duration_ms=946, data={editors_count=14, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_final,mb_final_system,mb_usb_hdmi_top}
+timestamp=[2024-05-03 10:37:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.071, duration_ms=71, data={}

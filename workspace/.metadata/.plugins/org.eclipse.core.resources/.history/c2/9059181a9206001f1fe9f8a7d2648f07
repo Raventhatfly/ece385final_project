@@ -1,0 +1,33 @@
+#ifndef GAME_END_FONT_H
+#define GAME_END_FONT_H
+
+#include "map.h"
+#include <stdint.h>
+
+#define FONT_WIDTH 8
+#define FONT_HEIGHT 16
+#define FONT_COLOR 0x99
+
+#define CHAR_A 0
+#define CHAR_B 1
+#define CHAR_C 2
+#define CHAR_E 3
+#define CHAR_H 4
+#define CHAR_I 5
+#define CHAR_M 6
+#define CHAR_N 7
+#define CHAR_O 8
+#define CHAR_R 9
+#define CHAR_S 10
+#define CHAR_T 11
+#define CHAR_U 12
+#define CHAR_V 13
+#define CHAR_Y 14
+#define CHAR_Z 15
+#define CHAR_SUPRISE 16
+
+#define GAME_LOSS_OFFSET_X 100
+#define GAME_LOSS_OFFSET_Y 100
+void draw_chrarcter(uint16_t x, uint16_t y, uint8_t char_id, BRAM_t* hdmi_ctrl);
+
+#endif

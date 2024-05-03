@@ -43,6 +43,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="BoardPart" Val=""/>
+    <Option Name="SourceMgmtMode" Val="None"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -96,53 +97,53 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_2/mb_lab7_axi_gpio_0_2.xci">
-          <Proxy FileSetName="mb_lab7_axi_gpio_0_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci">
-          <Proxy FileSetName="mb_lab7_hdmi_controller_0_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_microblaze_0_axi_intc_0/mb_lab7_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="mb_lab7_microblaze_0_axi_intc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3.xci">
-          <Proxy FileSetName="mb_lab7_axi_gpio_0_3"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_timer_0_0/mb_lab7_axi_timer_0_0.xci">
-          <Proxy FileSetName="mb_lab7_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_1/mb_lab7_axi_gpio_0_1.xci">
-          <Proxy FileSetName="mb_lab7_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_quad_spi_0_0/mb_lab7_axi_quad_spi_0_0.xci">
-          <Proxy FileSetName="mb_lab7_axi_quad_spi_0_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_dlmb_v10_0/mb_lab7_dlmb_v10_0.xci">
+          <Proxy FileSetName="mb_lab7_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_0/mb_lab7_axi_gpio_0_0.xci">
           <Proxy FileSetName="mb_lab7_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_mdm_1_0/mb_lab7_mdm_1_0.xci">
-          <Proxy FileSetName="mb_lab7_mdm_1_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_timer_0_0/mb_lab7_axi_timer_0_0.xci">
+          <Proxy FileSetName="mb_lab7_axi_timer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_uartlite_0_0/mb_lab7_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="mb_lab7_axi_uartlite_0_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_microblaze_0_axi_intc_0/mb_lab7_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="mb_lab7_microblaze_0_axi_intc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_dlmb_v10_0/mb_lab7_dlmb_v10_0.xci">
-          <Proxy FileSetName="mb_lab7_dlmb_v10_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_hdmi_controller_0_2/mb_lab7_hdmi_controller_0_2.xci">
+          <Proxy FileSetName="mb_lab7_hdmi_controller_0_2"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_clk_wiz_1_0/mb_lab7_clk_wiz_1_0.xci">
-          <Proxy FileSetName="mb_lab7_clk_wiz_1_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_rst_clk_wiz_1_100M_0/mb_lab7_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="mb_lab7_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_microblaze_0_0/mb_lab7_microblaze_0_0.xci">
-          <Proxy FileSetName="mb_lab7_microblaze_0_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_1/mb_lab7_axi_gpio_0_1.xci">
+          <Proxy FileSetName="mb_lab7_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_xbar_0/mb_lab7_xbar_0.xci">
-          <Proxy FileSetName="mb_lab7_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_2/mb_lab7_axi_gpio_0_2.xci">
+          <Proxy FileSetName="mb_lab7_axi_gpio_0_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_ilmb_v10_0/mb_lab7_ilmb_v10_0.xci">
           <Proxy FileSetName="mb_lab7_ilmb_v10_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_rst_clk_wiz_1_100M_0/mb_lab7_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="mb_lab7_rst_clk_wiz_1_100M_0"/>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_quad_spi_0_0/mb_lab7_axi_quad_spi_0_0.xci">
+          <Proxy FileSetName="mb_lab7_axi_quad_spi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_gpio_0_3/mb_lab7_axi_gpio_0_3.xci">
+          <Proxy FileSetName="mb_lab7_axi_gpio_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_xbar_0/mb_lab7_xbar_0.xci">
+          <Proxy FileSetName="mb_lab7_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_clk_wiz_1_0/mb_lab7_clk_wiz_1_0.xci">
+          <Proxy FileSetName="mb_lab7_clk_wiz_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_axi_uartlite_0_0/mb_lab7_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="mb_lab7_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_mdm_1_0/mb_lab7_mdm_1_0.xci">
+          <Proxy FileSetName="mb_lab7_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_lab7.bd" FileRelPathName="ip/mb_lab7_microblaze_0_0/mb_lab7_microblaze_0_0.xci">
+          <Proxy FileSetName="mb_lab7_microblaze_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/temp_src/audio.sv">
@@ -172,7 +173,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/ip/hdmi_controller_0/hdmi_controller_0.xci">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -180,7 +180,6 @@
       </File>
       <File Path="$PGENDIR/sources_1/bd/mb_lab7/hdl/mb_lab7_wrapper.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -516,9 +515,7 @@
     </Run>
     <Run Id="mb_lab7_hdmi_controller_0_2_synth_1" Type="Ft3:Synth" SrcSet="mb_lab7_hdmi_controller_0_2" Part="xc7s50csga324-1" ConstrsSet="mb_lab7_hdmi_controller_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mb_lab7_hdmi_controller_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/mb_lab7_hdmi_controller_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/mb_lab7_hdmi_controller_0_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -801,9 +798,7 @@
     </Run>
     <Run Id="mb_lab7_hdmi_controller_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="mb_lab7_hdmi_controller_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mb_lab7_hdmi_controller_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/mb_lab7_hdmi_controller_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/mb_lab7_hdmi_controller_0_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

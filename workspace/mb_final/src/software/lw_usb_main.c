@@ -19,6 +19,7 @@
 #include "sleep.h"
 #include "game_timer.h"
 #include "sun.h"
+#include "game_end_font.h"
 
 extern HID_DEVICE hid_device;
 
@@ -35,6 +36,16 @@ static volatile struct BRAM_t* hdmi_ctrl = XPAR_HDMI_CONTROLLER_0_AXI_BASEADDR;
 extern XTmrCtr Usb_timer;
 
 uint8_t update_flag = 0;
+
+void game_lost_op(void){
+	XIntc_Disable(&Intc,XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR);
+	draw_game_loss(hdmi_ctrl);
+}
+
+void game_win_op(void){
+	XIntc_Disable(&Intc,XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMER_0_INTERRUPT_INTR);
+	draw_game_win(hdmi_ctrl);
+}
 
 BYTE GetDriverandReport() {
 	BYTE i;
@@ -159,11 +170,6 @@ int main() {
 
 	game_timer_init();
 
-//	draw_fire(0,hdmi_ctrl);
-//	draw_fire(1,hdmi_ctrl);
-//	draw_fire(2,hdmi_ctrl);
-//	draw_fire(3,hdmi_ctrl);
-
 		while (1) {
 		XGpio_DiscreteWrite (&Gpio_cursor, 1, cursor_x);
 		XGpio_DiscreteWrite (&Gpio_cursor, 2, cursor_y);
@@ -186,6 +192,11 @@ int main() {
 			update_flag = 0;
 			if(check_loss()==1){
 				xil_printf("Zombies ate your brain!");
+				game_lost_op();
+				return;
+			}else if(check_win()==1){
+				xil_printf("Victory!");
+				game_win_op();
 				return;
 			}
 		}
@@ -313,3 +324,6 @@ int main() {
     cleanup_platform();
 	return 0;
 }
+
+
+

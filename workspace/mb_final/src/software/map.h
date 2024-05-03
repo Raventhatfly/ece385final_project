@@ -33,6 +33,7 @@ void draw_map(BRAM_t* hdmi_ctrl);
 void update_frame(void);
 void check_clear(BRAM_t* hdmi_ctrl);
 uint8_t check_loss(void);
+uint8_t check_win(void);
 void generate_pea_bullet(void);
 void increase_sun(uint8_t value);
 uint8_t can_decrease_sun(uint8_t value);

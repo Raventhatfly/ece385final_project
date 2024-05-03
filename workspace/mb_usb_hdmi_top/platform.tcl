@@ -95,3 +95,4 @@ platform generate
 platform config -updatehw {D:/ZJUI/ECE385/labs/final/final_project/mb_usb_hdmi_top.xsa}
 platform clean
 platform generate
+platform generate

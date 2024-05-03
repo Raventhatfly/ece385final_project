@@ -8,9 +8,11 @@
 slot_t lawn_map[32];
 extern pea_bullet_t pea_map[4][8];
 extern zombie_slot_t zombie_map[4][3];
+extern uint8_t zombie_cnt;
 uint8_t state = 0;
 uint8_t state_bullet = 0;
 uint32_t record_time;
+uint8_t win_game = 0;
 uint8_t loss_game = 0;
 uint8_t total_sun = 0;
 uint8_t is_burnning = 0;
@@ -215,6 +217,10 @@ void update_frame(void){
 		state = 14;
 	}
 	break;
+	case 14:
+	if(zombie_cnt == 0){
+		win_game = 1;
+	}
 	default:
 	break;
 	}
@@ -255,6 +261,7 @@ void check_clear(BRAM_t* hdmi_ctrl){
  					// If the zombie's hp is below, kill the zombie
 					if(zombie_map[i][j].zombie_inst.hp<0){
 						zombie_map[i][j].is_present = 0;
+						zombie_cnt--;
 						clear_zombie(&zombie_map[i][j].zombie_inst,hdmi_ctrl);
 					}
 				}
@@ -265,6 +272,10 @@ void check_clear(BRAM_t* hdmi_ctrl){
 
 uint8_t check_loss(void){
 	return loss_game;
+}
+
+uint8_t check_win(void){
+	return win_game;
 }
 
 void generate_pea_bullet(void){
@@ -388,6 +399,7 @@ void pepper_burn(BRAM_t* hdmi_ctrl){
 				if(zombie_map[i/8][j].is_present){
 					clear_zombie(&zombie_map[i/8][j].zombie_inst,hdmi_ctrl);
 					zombie_map[i/8][j].is_present = 0;
+					zombie_cnt--;
 				}
 			}
 

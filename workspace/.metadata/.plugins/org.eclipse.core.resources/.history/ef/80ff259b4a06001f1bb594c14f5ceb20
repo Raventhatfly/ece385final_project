@@ -1,0 +1,9 @@
+#ifndef GAME_END_FONT_H
+#define GAME_END_FONT_H
+
+#include "map.h"
+#include <stdint.h>
+
+void draw_chrarcter(uint16_t x, uint16_t y, uint8_t char_id, BRAM_t* hdmi_ctrl);
+
+#endif
