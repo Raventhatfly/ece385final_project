@@ -11,3 +11,9 @@ is ready to play.
 
 #### How to play:
 The arrow keys are used to control the cursor. `E` is used for picking sun, while `1`, `2`, `3`,`4` is used for planting, and `delete` will clear the plant on the slot.
+
+#### Video Demo:
+Click [here](https://www.bilibili.com/video/BV1UU411Z78A/) to watch on Blibili:
+
+<video src="https://www.bilibili.com/video/BV1UU411Z78A/" controls="controls" style="max-width: 100%;">
+</video>
